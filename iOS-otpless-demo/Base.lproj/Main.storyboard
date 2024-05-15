@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="guA-nX-flR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BaseViewController" customModule="iOS_otpless_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Test Mode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7G-Rg-KaS">
+                                <rect key="frame" x="20" y="149" width="353" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHg-h3-DHi">
+                                <rect key="frame" x="143" y="286" width="108" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pre Built UI"/>
+                                <connections>
+                                    <action selector="showLoginPageButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMM-H4-D1K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTF-CU-Vn5">
+                                <rect key="frame" x="150" y="371" width="95" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Headless"/>
+                                <connections>
+                                    <action selector="navigateToHeadlessVC" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2e-Tj-Pv7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cc5-HO-goP"/>
+                    <connections>
+                        <outlet property="chooseTestModeLabel" destination="X7G-Rg-KaS" id="E7x-dh-HJA"/>
+                        <outlet property="navigateToHeadlessVCButton" destination="gTF-CU-Vn5" id="OIg-dU-TXF"/>
+                        <outlet property="showPreBuiltUIButton" destination="HHg-h3-DHi" id="11V-d5-jbm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+        </scene>
+        <!--HeadlessVC-->
+        <scene sceneID="KIB-wb-Y7i">
+            <objects>
+                <viewController storyboardIdentifier="HeadlessVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sdr-uO-6h1" customClass="HeadlessVC" customModule="iOS_otpless_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="68h-40-C8v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Am3-Vz-7nd">
+                                <rect key="frame" x="40" y="86" width="313" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lzm-pW-fuN"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Phone"/>
+                                    <segment title="Email"/>
+                                    <segment title="Social Sign In"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="Sdr-uO-6h1" eventType="valueChanged" id="noU-Vt-0d5"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pxt-0K-qxZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Am3-Vz-7nd" firstAttribute="top" secondItem="pxt-0K-qxZ" secondAttribute="top" constant="27" id="0pn-IS-yVC"/>
+                            <constraint firstItem="Am3-Vz-7nd" firstAttribute="leading" secondItem="pxt-0K-qxZ" secondAttribute="leading" constant="40" id="Mb8-t0-832"/>
+                            <constraint firstItem="pxt-0K-qxZ" firstAttribute="trailing" secondItem="Am3-Vz-7nd" secondAttribute="trailing" constant="40" id="fvi-F6-QaT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInMethodSegmentControl" destination="Am3-Vz-7nd" id="177-58-4Ox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLN-yq-IUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="-45"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZXa-bm-vtC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="guA-nX-flR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ksG-n7-TQo">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="r0o-rP-Fx3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gF8-CF-uhM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

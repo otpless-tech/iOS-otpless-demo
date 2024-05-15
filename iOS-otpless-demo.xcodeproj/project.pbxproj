@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54C976CF2BE2CBA800E2B8E2 /* VCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C976CE2BE2CBA800E2B8E2 /* VCExtension.swift */; };
+		54C976D12BE2CBC500E2B8E2 /* HeadlessVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C976D02BE2CBC500E2B8E2 /* HeadlessVCExtension.swift */; };
+		54C976D32BE2DD0700E2B8E2 /* CopyResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C976D22BE2DD0700E2B8E2 /* CopyResponseView.swift */; };
+		54FDFEF62BE0D83C00EA2A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDFEF52BE0D83C00EA2A99 /* AppDelegate.swift */; };
+		54FDFEF82BE0D83C00EA2A99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDFEF72BE0D83C00EA2A99 /* SceneDelegate.swift */; };
+		54FDFEFA2BE0D83C00EA2A99 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDFEF92BE0D83C00EA2A99 /* BaseViewController.swift */; };
+		54FDFEFD2BE0D83C00EA2A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FDFEFB2BE0D83C00EA2A99 /* Main.storyboard */; };
+		54FDFEFF2BE0D83D00EA2A99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FDFEFE2BE0D83D00EA2A99 /* Assets.xcassets */; };
+		54FDFF022BE0D83D00EA2A99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FDFF002BE0D83D00EA2A99 /* LaunchScreen.storyboard */; };
+		54FDFF0D2BE1785300EA2A99 /* HeadlessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDFF0C2BE1785300EA2A99 /* HeadlessVC.swift */; };
+		54FDFF102BE17F5900EA2A99 /* PhoneAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDFF0F2BE17F5900EA2A99 /* PhoneAuthView.swift */; };
+		54FDFF162BE234A800EA2A99 /* EmailAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDFF152BE234A800EA2A99 /* EmailAuthView.swift */; };
+		54FDFF182BE2354900EA2A99 /* SSOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDFF172BE2354900EA2A99 /* SSOView.swift */; };
+		8E73517931F7CBB7B23C5421 /* Pods_iOS_otpless_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7488708519F47C4B3E3B11 /* Pods_iOS_otpless_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B7488708519F47C4B3E3B11 /* Pods_iOS_otpless_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_otpless_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E65F5045AE434C06CB37D /* Pods-iOS-otpless-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-otpless-demo.debug.xcconfig"; path = "Target Support Files/Pods-iOS-otpless-demo/Pods-iOS-otpless-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		54C976CE2BE2CBA800E2B8E2 /* VCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtension.swift; sourceTree = "<group>"; };
+		54C976D02BE2CBC500E2B8E2 /* HeadlessVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlessVCExtension.swift; sourceTree = "<group>"; };
+		54C976D22BE2DD0700E2B8E2 /* CopyResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyResponseView.swift; sourceTree = "<group>"; };
+		54FDFEF22BE0D83C00EA2A99 /* iOS-otpless-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-otpless-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54FDFEF52BE0D83C00EA2A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54FDFEF72BE0D83C00EA2A99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		54FDFEF92BE0D83C00EA2A99 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		54FDFEFC2BE0D83C00EA2A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54FDFEFE2BE0D83D00EA2A99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54FDFF012BE0D83D00EA2A99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54FDFF032BE0D83D00EA2A99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54FDFF0C2BE1785300EA2A99 /* HeadlessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlessVC.swift; sourceTree = "<group>"; };
+		54FDFF0F2BE17F5900EA2A99 /* PhoneAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthView.swift; sourceTree = "<group>"; };
+		54FDFF152BE234A800EA2A99 /* EmailAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthView.swift; sourceTree = "<group>"; };
+		54FDFF172BE2354900EA2A99 /* SSOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSOView.swift; sourceTree = "<group>"; };
+		B1123DD9640776472B8058E8 /* Pods-iOS-otpless-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-otpless-demo.release.xcconfig"; path = "Target Support Files/Pods-iOS-otpless-demo/Pods-iOS-otpless-demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54FDFEEF2BE0D83C00EA2A99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E73517931F7CBB7B23C5421 /* Pods_iOS_otpless_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54C976CD2BE2CB6700E2B8E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				54C976CE2BE2CBA800E2B8E2 /* VCExtension.swift */,
+				54C976D02BE2CBC500E2B8E2 /* HeadlessVCExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		54FDFEE92BE0D83C00EA2A99 = {
+			isa = PBXGroup;
+			children = (
+				54FDFEF42BE0D83C00EA2A99 /* iOS-otpless-demo */,
+				54FDFEF32BE0D83C00EA2A99 /* Products */,
+				BB84B43F04071CCF3792FB15 /* Pods */,
+				9FD15C230FAFC7279184AA2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54FDFEF32BE0D83C00EA2A99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54FDFEF22BE0D83C00EA2A99 /* iOS-otpless-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54FDFEF42BE0D83C00EA2A99 /* iOS-otpless-demo */ = {
+			isa = PBXGroup;
+			children = (
+				54FDFF142BE2347000EA2A99 /* Application */,
+				54FDFF132BE2236500EA2A99 /* ViewControllers */,
+				54FDFF0E2BE17F3E00EA2A99 /* Views */,
+				54C976CD2BE2CB6700E2B8E2 /* Extensions */,
+				54FDFF002BE0D83D00EA2A99 /* LaunchScreen.storyboard */,
+				54FDFEFB2BE0D83C00EA2A99 /* Main.storyboard */,
+				54FDFEFE2BE0D83D00EA2A99 /* Assets.xcassets */,
+				54FDFF032BE0D83D00EA2A99 /* Info.plist */,
+			);
+			path = "iOS-otpless-demo";
+			sourceTree = "<group>";
+		};
+		54FDFF0E2BE17F3E00EA2A99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54FDFF0F2BE17F5900EA2A99 /* PhoneAuthView.swift */,
+				54FDFF152BE234A800EA2A99 /* EmailAuthView.swift */,
+				54FDFF172BE2354900EA2A99 /* SSOView.swift */,
+				54C976D22BE2DD0700E2B8E2 /* CopyResponseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54FDFF132BE2236500EA2A99 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				54FDFF0C2BE1785300EA2A99 /* HeadlessVC.swift */,
+				54FDFEF92BE0D83C00EA2A99 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		54FDFF142BE2347000EA2A99 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				54FDFEF52BE0D83C00EA2A99 /* AppDelegate.swift */,
+				54FDFEF72BE0D83C00EA2A99 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9FD15C230FAFC7279184AA2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B7488708519F47C4B3E3B11 /* Pods_iOS_otpless_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB84B43F04071CCF3792FB15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E65F5045AE434C06CB37D /* Pods-iOS-otpless-demo.debug.xcconfig */,
+				B1123DD9640776472B8058E8 /* Pods-iOS-otpless-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54FDFEF12BE0D83C00EA2A99 /* iOS-otpless-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54FDFF062BE0D83D00EA2A99 /* Build configuration list for PBXNativeTarget "iOS-otpless-demo" */;
+			buildPhases = (
+				5DD6BDF8EDFB9A4C879D8793 /* [CP] Check Pods Manifest.lock */,
+				54FDFEEE2BE0D83C00EA2A99 /* Sources */,
+				54FDFEEF2BE0D83C00EA2A99 /* Frameworks */,
+				54FDFEF02BE0D83C00EA2A99 /* Resources */,
+				9E44160DEBC7FA9790A66A8C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-otpless-demo";
+			packageProductDependencies = (
+			);
+			productName = "iOS-otpless-demo";
+			productReference = 54FDFEF22BE0D83C00EA2A99 /* iOS-otpless-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54FDFEEA2BE0D83C00EA2A99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					54FDFEF12BE0D83C00EA2A99 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 54FDFEED2BE0D83C00EA2A99 /* Build configuration list for PBXProject "iOS-otpless-demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54FDFEE92BE0D83C00EA2A99;
+			packageReferences = (
+			);
+			productRefGroup = 54FDFEF32BE0D83C00EA2A99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54FDFEF12BE0D83C00EA2A99 /* iOS-otpless-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54FDFEF02BE0D83C00EA2A99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FDFF022BE0D83D00EA2A99 /* LaunchScreen.storyboard in Resources */,
+				54FDFEFF2BE0D83D00EA2A99 /* Assets.xcassets in Resources */,
+				54FDFEFD2BE0D83C00EA2A99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DD6BDF8EDFB9A4C879D8793 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-otpless-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E44160DEBC7FA9790A66A8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-otpless-demo/Pods-iOS-otpless-demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-otpless-demo/Pods-iOS-otpless-demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-otpless-demo/Pods-iOS-otpless-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54FDFEEE2BE0D83C00EA2A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FDFEFA2BE0D83C00EA2A99 /* BaseViewController.swift in Sources */,
+				54FDFF0D2BE1785300EA2A99 /* HeadlessVC.swift in Sources */,
+				54C976D12BE2CBC500E2B8E2 /* HeadlessVCExtension.swift in Sources */,
+				54C976CF2BE2CBA800E2B8E2 /* VCExtension.swift in Sources */,
+				54FDFEF62BE0D83C00EA2A99 /* AppDelegate.swift in Sources */,
+				54C976D32BE2DD0700E2B8E2 /* CopyResponseView.swift in Sources */,
+				54FDFEF82BE0D83C00EA2A99 /* SceneDelegate.swift in Sources */,
+				54FDFF102BE17F5900EA2A99 /* PhoneAuthView.swift in Sources */,
+				54FDFF182BE2354900EA2A99 /* SSOView.swift in Sources */,
+				54FDFF162BE234A800EA2A99 /* EmailAuthView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54FDFEFB2BE0D83C00EA2A99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54FDFEFC2BE0D83C00EA2A99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54FDFF002BE0D83D00EA2A99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54FDFF012BE0D83D00EA2A99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54FDFF042BE0D83D00EA2A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54FDFF052BE0D83D00EA2A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54FDFF072BE0D83D00EA2A99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4E65F5045AE434C06CB37D /* Pods-iOS-otpless-demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LRPGAA2922;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-otpless-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.otpless.ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54FDFF082BE0D83D00EA2A99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1123DD9640776472B8058E8 /* Pods-iOS-otpless-demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LRPGAA2922;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS-otpless-demo/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.otpless.ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54FDFEED2BE0D83C00EA2A99 /* Build configuration list for PBXProject "iOS-otpless-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FDFF042BE0D83D00EA2A99 /* Debug */,
+				54FDFF052BE0D83D00EA2A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54FDFF062BE0D83D00EA2A99 /* Build configuration list for PBXNativeTarget "iOS-otpless-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54FDFF072BE0D83D00EA2A99 /* Debug */,
+				54FDFF082BE0D83D00EA2A99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54FDFEEA2BE0D83C00EA2A99 /* Project object */;
+}
